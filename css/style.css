@@ -96,6 +96,7 @@ ul {
 /* Плавность смены цвета кнопки */
 .button__patch {
   transition: fill 0.5s;
+  cursor: pointer;
 }
 
 .button:hover .button__patch {
