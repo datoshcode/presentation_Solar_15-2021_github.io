@@ -26,7 +26,7 @@ $(function(){
    // Логика для слайдера /end-code
   
    // Форма отправки сообщений   
-  $("footer__form").submit(function() { //Change
+  $(".footer__form").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
