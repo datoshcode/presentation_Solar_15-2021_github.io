@@ -1,0 +1,434 @@
+/* box-sizing: border-box */
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+/* Глобальные стили BEGIN-CODE */
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #303030;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* .container с шириной 1200 px */
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 33px;
+  color: #868585;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+/* Глобальные стили END-CODE */
+
+/* Шапка сайта BEGIN-CODE */
+.header {
+  background-image: url(../images/header-bg.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 70px 10px 38px;
+  margin-bottom: 150px;
+}
+
+/* Логотип */
+.logo {
+  /* Объявлние определяет действие курсора только в поле, которое не более ширины элемента */
+  align-self: center;
+}
+
+/* Подзаголовок */
+.header__subtitle {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-top: auto;
+}
+
+/* Заголовок */
+.header__title {
+  font-size: 64px;
+  line-height: 87px;
+}
+
+.header__title span {
+  display: block;
+  font-size: 42px;
+  line-height: 57px;
+}
+
+/* Кнопка ссылка Записаться на консультацию */
+.header__button {
+  margin-top: 50px;
+  margin-bottom: auto;
+  /* Объявлние определяет действие курсора только в поле, которое не более ширины элемента */
+  align-self: center;
+}
+
+/* Плавность смены цвета кнопки */
+.button__patch {
+  transition: fill 0.5s;
+}
+
+.button:hover .button__patch {
+  fill: #a9a32a;
+}
+
+.button__text {
+  font-size: 18px;
+  line-height: 25px;
+  display: inline-block;
+  /* Свойство перемещает вверх надпись в кнопке */
+  transform: translateY(-17px);
+  margin-left: -57px;
+}
+
+/*  Ссылки на соц.сети */
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__link {
+  padding: 0 10px;
+}
+/* Шапка сайта END-CODE */
+
+/* Раздел "Услуги" BEGIN-CODE */
+.service {
+  margin-bottom: 150px;
+}
+
+.service__inner {
+  display: flex;
+}
+
+.service__content {
+  flex-basis: 510px;
+  margin-right: 90px;
+}
+
+.service__box {
+  margin-bottom: 50px;
+}
+
+.service__box-title {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.service__img {
+  object-fit: cover;
+}
+/* Раздел "Услуги" END-CODE */
+
+/* Раздел "Зеленый тариф" BEGIN-CODE */
+.info {
+  margin-bottom: 150px;
+}
+
+.info__inner {
+  display: flex;
+}
+
+.info__box {
+  flex-basis: 510px;
+  margin-right: 90px;
+}
+
+.info__content {
+  flex-basis: 600px;
+}
+
+.info__content-text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-bottom: 17px;
+}
+
+.info-tabs {
+  margin-bottom: 100px;
+}
+
+.info-tabs__items {
+  margin-bottom: 120px;
+}
+
+.info-tabs__item {
+  font-size: 18px;
+  line-height: 25px;
+  margin-right: 40px;
+}
+
+.info-tabs__item--active {
+  border-bottom: 1px solid #303030;
+}
+
+.info-tabs__content {
+  display: none;
+}
+
+.info-tabs__content--active {
+  display: block;
+}
+
+.info-slider {
+  max-width: 510px;
+}
+
+.info-slider__img {
+  margin-right: 40px;
+  float: left;
+}
+
+.info-slider__text {
+  padding-bottom: 15px;
+}
+
+.slick-arrow {
+  position: absolute;
+  left: 275px;
+  bottom: -3px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.slick-next {
+  left: 340px;
+}
+
+.info__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info__list-item {
+  flex-basis: 235px;
+  margin-bottom: 17px;
+}
+
+.info__list-title {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+/* Раздел "Зеленый тариф" END-CODE */
+
+/* Раздел "Цитата" BEGIN-CODE */
+.blockquote {
+  padding: 128px 10px 144px;
+  background-image: url(../images/blockquote.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.blockquote__text {
+  max-width: 670px;
+  margin: 0 auto;
+  font-size: 42px;
+  line-height: 57px;
+  color: #ffffff;
+}
+/* Раздел "Цитата" END-CODE */
+
+/* Блок "Наши клиенты" BEGIN-CODE */
+/* Слайдер */
+.clients {
+  margin-bottom: 150px;
+}
+
+.clients-slider__box {
+  display: flex;
+}
+
+.clients-slider__box-img {
+  flex-basis: 510px;
+  margin-right: 90px;
+  margin-bottom: 30px;
+}
+
+.clients-slider__box-title {
+  max-width: 478px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.clients-slider__box-list {
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.clients-slider__box-item {
+  margin-bottom: 15px;
+}
+
+/* Эффект (смена цвета с черного на желтый) стрелок слайдера при наведении */
+.slick-arrow:hover path {
+  fill: #a9a32a;
+}
+
+/* Плавность смены эффекта */
+.slick-arrow path {
+  transition: fill 0.5s;
+}
+/* Блок "Наши клиенты" END-CODE */
+
+/* Блок "5 шагов к собственной электростанции" BEGIN-CODE */
+.steps {
+  margin-bottom: 150px;
+}
+
+.steps__inner {
+  display: flex;
+}
+
+.steps__img {
+  flex-basis: 600px;
+  object-fit: cover;
+}
+
+.steps__content {
+  margin-right: 90px;
+}
+
+/* Счетчик шагов 01,02,03...10 BEGIN-CODE*/
+.steps__list {
+  list-style: none;
+  counter-reset: number;
+}
+
+.steps__list-item {
+  counter-increment: number;
+  margin-bottom: 30px;
+}
+
+.steps__list-item::before {
+  content: "0" counter(number);
+  margin-bottom: 11px;
+  color: #868585;
+}
+
+.steps__list-item:nth-child(n + 10)::before {
+  content: counter(number);
+}
+/* Счетчик шагов 01,02,03...10 END-CODE*/
+
+.steps__list-title {
+  margin-bottom: 2px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+}
+/* Блок "5 шагов к собственной электростанции" END-CODE */
+
+/*  Footer BEGIN-CODE */
+.footer {
+  background-image: url(../images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 70px 0 50px;
+  color: #ffffff;
+}
+
+.footer__top {
+  display: flex;
+  margin-bottom: 150px;
+}
+
+.footer__form {
+  flex-basis: 510px;
+  margin-right: 90px;
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 43px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+/* Форма отправки */
+.footer__input {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  padding: 11px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+
+.footer__input::placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.footer__form-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: #ffffff;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__contacts-item {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.footer .social {
+  margin-right: -10px;
+}
+/*  Footer END-CODE */
