@@ -536,8 +536,15 @@ HTML-код успешно прошел проверку данных на ва�
         <div class="footer__top">
           <form class="footer__form">
             <h2 class="footer__title">ОСТАВИТЬ ЗАЯВКУ</h2>
-            <input class="footer__input" type="text" placeholder="Имя" />
-            <input class="footer__input" type="tel" placeholder="Телефон" />
+            
+            <!-- Настройка формы отправки сообщений BEGIN-CODE -->
+		        <input type="hidden" name="project_name" value="Solar">
+		        <input type="hidden" name="admin_email" value="datoshcode@gmail.com">
+		        <input type="hidden" name="form_subject" value="Form">
+		        <!-- Настройка формы отправки сообщений END-CODE -->
+            
+            <input class="footer__input" name="Имя" type="text" placeholder="Имя" />
+            <input class="footer__input" name="Телефон" type="tel" placeholder="Телефон" />
             <button class="footer__form-btn button">
               <!-- Иконка белая стрелка в элипсе с возможностью сменые цвета при наведении -->
               <!-- Для макета, цвет фона и его плавность отображения при наведении, были изменены: 
